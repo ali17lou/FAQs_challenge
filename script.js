@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.querySelectorAll(".q"); 
-
     buttons.forEach((button, index) => {
         button.addEventListener("click", function () {
             let paragraph = document.querySelectorAll(".r")[index]; 
