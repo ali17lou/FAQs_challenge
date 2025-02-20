@@ -1,10 +1,17 @@
-document.querySelectorAll(".q").forEach(q => {
-    q.addEventListener("click", function() {
-        let answer = this.nextElementSibling; 
-        if (answer.style.display === "block") {
-            answer.style.display = "none";
-        } else {
-            answer.style.display = "block";
-        }
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.querySelectorAll(".q"); 
+
+    buttons.forEach((button, index) => {
+        button.addEventListener("click", function () {
+            let paragraph = document.querySelectorAll(".r")[index]; 
+
+            if (paragraph.style.display === "none" || paragraph.style.display === "") {
+                paragraph.style.display = "block"; 
+                this.querySelector("button img").src = "./assets/images/icon-minus.svg"; 
+            } else {
+                paragraph.style.display = "none";
+                this.querySelector("button img").src = "./assets/images/icon-plus.svg"; 
+            }
+        });
     });
 });
