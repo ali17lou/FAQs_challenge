@@ -1,0 +1,75 @@
+:root{
+     --groung_color : #ECE4F2 ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+body{
+    background-color: var(--groung_color);
+    background-image: url("./assets/images/background-pattern-desktop.svg"); 
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 25vh; 
+}
+.jadwal {
+background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.container {
+    margin-left: 500px;
+    margin-top: 150px;
+    width: 90%;
+    max-width: 600px;
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25vh; 
+    width: 100%; 
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-family: myfont;
+}
+@font-face{
+    font-family: "myfont";
+    src: url("./assets/fonts/static/WorkSans-Bold.ttf") format("truetype"),
+}
+hr {
+    height: 0.1px; 
+    background-color: gray;
+    border: none; 
+}
+.q {
+    font-family: "myfont";
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    cursor: pointer ;
+}
+.q:hover{
+    color: purple;
+}
+.r {
+    font-family: "myfont";
+    opacity: 0.5;
+   margin-bottom :20px; 
+    display: none; 
+}
+hr {
+    margin-bottom: 30px; 
+}
+h3 {
+    margin-bottom: 30px; 
+}
